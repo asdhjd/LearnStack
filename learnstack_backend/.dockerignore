@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.idea/
+media/
+staticfiles/
+.env
+.git/
+.gitignore
+*.sql
