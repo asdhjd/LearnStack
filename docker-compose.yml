@@ -18,6 +18,7 @@ services:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       timeout: 20s
       retries: 10
+    command: --default-authentication-plugin=mysql_native_password
 
   backend:
     build: ./learnstack_backend
