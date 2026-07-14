@@ -8,7 +8,6 @@ __pycache__/
 .idea/
 .vscode/
 node_modules/
-dist/
 media/
 staticfiles/
 *.log
