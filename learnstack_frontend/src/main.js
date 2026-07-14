@@ -7,10 +7,10 @@ import { createPinia } from 'pinia';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 
-axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL || '/api';
+axios.defaults.baseURL = '';
 
 const app = createApp(App);
-app.config.globalProperties.mediaUrl = (import.meta.env.VITE_API_BASE_URL || '/api').replace('/api', '') + '/media/';
+app.config.globalProperties.mediaUrl = '/media/';
 
 const pinia = createPinia(); // 新增：创建 Pinia 实例
 app.use(pinia);
